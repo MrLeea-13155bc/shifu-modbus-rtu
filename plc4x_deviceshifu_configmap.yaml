@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: plc4x-configmap
+  namespace: deviceshifu
+data:
+  driverProperties: |
+    driverSku: Plc4x
+    driverImage: nil
+  instructions: |
+    instructionSettings:
+      defaultTimeoutSeconds: 3
+    instructions:
+  telemetries: |
+    telemetrySettings:
+      telemetryTimeoutInMilliseconds: 6000
